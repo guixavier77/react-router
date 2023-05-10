@@ -11,10 +11,10 @@ const Produtos = () => {
   }, []);
 
   if (produtos === null) return null;
-  console.log(produtos);
+
   return (
     <section className={styles.produtos + ' animeLeft'}>
-      <Head title='Ranek | Produtos' description='Entre em contato'></Head>
+      <Head title='Ranek | Produtos' description='Produtos'></Head>
 
       {produtos.map((produto) => (
         <Link to={`produto/${produto.id}`} key={produto.id}>
